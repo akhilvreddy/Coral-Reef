@@ -19,4 +19,11 @@ I started off everything by writing a Java function that would be able to do bor
 
 I decided to compare pixels, and looped through the image using a nested for loop.
 
-## Adding the resutls to a speiccic JSON File
+## Training the algorithm (.tflife file)
+
+
+## Demonstration
+
+## Issues 
+
+## What's next 
