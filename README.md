@@ -41,6 +41,25 @@ I started off everything by writing a Java function that would be able to do bor
 
 I decided to compare pixels, and looped through the image using a nested for loop.
 
+## How the Code Works
+You can find the real code in the java file in this repository (Main.java), but I have included some pseudocode here to better understand it. 
+
+```
+for (int i = 0; i < image.width; i++){
+  for (int j = 0; j < image.height; j++){
+   
+    if ( _condition_ )
+      -> get RGB Value of pixel, understand the value, and keep it
+   
+   }
+}
+
+return averageRedValue, averageGreenValue, averageBlueValue, colorDensity, etc..
+```
+
+Here, the condition is the main part 
+It's 0($n^2$), but it doesn't make the phone crash so I didn't mind. 
+
 ## Training the algorithm (.tflife file)
 This part didn't require much coding, but rather some learning on how neural networks work. What we did was gather. 
 We ran into some issues of the network not being too accurate at first and not detecting some of them, so we went back and trained the network further by importing and describing more images.
