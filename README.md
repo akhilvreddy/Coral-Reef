@@ -21,7 +21,7 @@ From this, we would have to detect the border of the image, find the average RBG
 
 ## Starting this Project
 
-I started off everything by writing a Java function that would be able to do border and image detection. I started off using an open source edge detector, but quikcly realized that it would take a lot of processing power from the somewhat cheap phone that I was given. After some thinking, this is what I did next: 
+I started off everything by writing a Java function that would be able to do border and image detection. I started off using an open source edge detector, but quickly realized that it would take a lot of processing power from the somewhat cheap phone that I was given. After some thinking, this is what I did next: 
 
 
 <p align="center">
