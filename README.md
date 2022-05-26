@@ -7,7 +7,15 @@ The goal of this lab was to take a sample of coral reefs (based out of Honlulu, 
 
 The members from the biochemistry department would take a snap of a reef and it would look like this: 
 
-<img src="https://github.com/akhilvreddy/CoralReefAnalysis/blob/main/Mcap41.jpg" alt="Reef" width="700" class="centerImage" height="500">
+<p align="center">
+  <img 
+    width="544"
+    height="378"
+    src="https://github.com/akhilvreddy/CoralReefAnalysis/blob/main/Mcap41.jpg"
+  >
+</p>
+
+> The red, blue, and green is the relative RGB values based on the camera that took the image, so we have to compare to those specific values. 
 
 From this, we would have to detect the border of the image, find the average RBG value, do some more chemical analysis on it, and send it back to the biochemistry folks in order for them to analyze it more. In the following, I will explain what I did and how this came to fruition. 
 
@@ -15,7 +23,15 @@ From this, we would have to detect the border of the image, find the average RBG
 
 I started off everything by writing a Java function that would be able to do border and image detection. I started off using an open source edge detector, but quikcly realized that it would take a lot of processing power from the somewhat cheap phone that I was given. After some thinking, this is what I did next: 
 
-//add picture of diffferences
+
+<p align="center">
+  <img 
+    width="344"
+    height="394"
+    src="https://github.com/akhilvreddy/CoralReefAnalysis/blob/main/reefpic2.jpg"
+  >
+</p>
+
 
 I decided to compare pixels, and looped through the image using a nested for loop.
 
