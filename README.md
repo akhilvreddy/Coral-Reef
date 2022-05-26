@@ -7,7 +7,7 @@ The goal of this lab was to take a sample of coral reefs (based out of Honlulu, 
 
 The members from the biochemistry department would take a snap of a reef and it would look like this: 
 
-<p style="text-align:center;"><img src="https://github.com/akhilvreddy/CoralReefAnalysis/blob/main/Mcap41.jpg" alt="Reef" width="700" height="500"></p>
+<img src="https://github.com/akhilvreddy/CoralReefAnalysis/blob/main/Mcap41.jpg" alt="Reef" width="700" class="centerImage" height="500">
 
 From this, we would have to detect the border of the image, find the average RBG value, do some more chemical analysis on it, and send it back to the biochemistry folks in order for them to analyze it more. In the following, I will explain what I did and how this came to fruition. 
 
