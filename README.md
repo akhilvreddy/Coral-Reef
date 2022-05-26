@@ -45,7 +45,7 @@ I decided to compare pixels, and looped through the image using a nested for loo
 This part didn't require much coding, but rather some learning on how neural networks work. What we did was gather. 
 We ran into some issues of the network not being too accurate at first and not detecting some of them, so we went back and trained the network further by importing and describing more images.
 
-We used **TensorFlow** in python and used the ImageDataGenerator to do the analysis. The end goal of this was for the YOLOV-4 software to interpret the three different 
+We used _**TensorFlow**_ and the ImageDataGenerator in python3 to do the analysis. The end goal of this was for the YOLOV-4 software to interpret the differnet coral in the pictures as shown in picture 2. Then I would take multiple different types of images like picture 2 for multiple coral, strengthen the border detection by using my above algorithm, and then outputting the values to the biochem people. 
 
 ## Demonstration
 
