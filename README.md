@@ -49,16 +49,42 @@ for (int i = 0; i < image.width; i++){
   for (int j = 0; j < image.height; j++){
    
     if ( _condition_ )
-      -> get RGB Value of pixel, understand the value, and keep it
-   
+      -> get RGB Value of pixel, understand the value, and store it
+      
    }
 }
 
 return averageRedValue, averageGreenValue, averageBlueValue, colorDensity, etc..
 ```
 
-Here, the condition is the main part 
-It's 0($n^2$), but it doesn't make the phone crash so I didn't mind. 
+Here, the condition is the main part that does the border detection. It was kind of lengthy. 
+
+With the squares that YOLOV-4 identified, they always did an overshoot of the coral. Because of this I knew that the the four corners had to be the background color, which was significantly different than the coral coral (which they did on purpose). 
+
+```
+-> upper left corner: cornerPixel1
+-> upper right corner: cornerPixel2
+-> lower left corner: cornerPixel3
+-> lower right corner: cornerPixel4
+
+backgroundRedValue = (cornerPixel1.Red+cornerPixel2.Red+cornerPixel3.Red+cornerPixel4.Red)/4
+backgroundGreenValue = (cornerPixel1.Green+cornerPixel2.Green+cornerPixel3.Green+cornerPixel4.Green)/4
+backgroundBlueValue = (cornerPixel1.Blue+cornerPixel2.Blue+cornerPixel3.Blue+cornerPixel4+Blue)/4
+```
+From here on out, I've assumed that the 4 pixels average is ****the color components of the background****.
+
+Now, knowing the red, green, and blue value of the background, I can compare the current pixel in the loop to the background color to see if they match. If they don't match, that's how we know its a coral reef pixel. 
+
+```
+ if ( _condition_ )
+ 
+ here, the condition will be: 
+ 
+ currentPixel.red!=backgroundRedValue && currentPixel.blue!=backgroundBlueValue && currentPixel.green!=backgroundgreenValue
+```
+This seems like an efficient way to do it, but can lead to several issues. Each pixel of the background can have varying pixel element colors. We need a range of values for the pixel to be in so that this condition. 
+
+
 
 ## Training the algorithm (.tflife file)
 This part didn't require much coding, but rather some learning on how neural networks work. What we did was gather. 
