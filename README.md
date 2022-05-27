@@ -108,7 +108,17 @@ From testing different RGB values, I saw that even if two of these conditions ar
 
 The harder it is to see the difference between these two images means the better this algorithm is working :)
 
-Now, using the average RGB values that I got, I packed them into a single file and sent that out. Others can analyze the coral from there. 
+Now, using the average RGB values that I got, I packed them into a single file and sent that out. Others can analyze the coral from there. The data was packed like the following. 
+
+<p align="center">
+  <img 
+    width="744"
+    height="134"
+    src="https://github.com/akhilvreddy/CoralReefAnalysis/blob/main/44pic0.png"
+  >
+</p>
+
+>  Here, the different lines are supposed to represent the different types of coral that we have. 
 
 ## Training the algorithm (.tflife file)
 This part didn't require much coding, but rather some learning on how neural networks work. What we did was gather. 
