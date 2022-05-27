@@ -84,7 +84,12 @@ Now, knowing the red, green, and blue value of the background, I can compare the
 ```
 This seems like an efficient way to do it, but can lead to several issues. Each pixel of the background can have varying pixel element colors. We need a range of values for the pixel to be in so that this condition. 
 
+This can be done like the following: 
 
+```
+condition: Math.abs(currentPixel.red-backgroundRedValue) <= 10 ; Math.abs(currentPixel.blue-backgroundBlueValue) <= 10 ; Math.abs(currentPixel.blue-backgroundBlueValue) <= 10
+```
+From testing different RGB values, I saw that even if two of these conditions are true, the detection works well. Putting this into the if condition makes it work well. 
 
 ## Training the algorithm (.tflife file)
 This part didn't require much coding, but rather some learning on how neural networks work. What we did was gather. 
