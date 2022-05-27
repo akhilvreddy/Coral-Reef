@@ -69,14 +69,14 @@ With the squares that YOLOV-4 identified, they always did an overshoot of the co
 
 backgroundRedValue = (cornerPixel1.Red+cornerPixel2.Red+cornerPixel3.Red+cornerPixel4.Red)/4
 backgroundGreenValue = (cornerPixel1.Green+cornerPixel2.Green+cornerPixel3.Green+cornerPixel4.Green)/4
-backgroundBlueValue = (cornerPixel1.Blue+cornerPixel2.Blue+cornerPixel3.Blue+cornerPixel4+Blue)/4
+backgroundBlueValue = (cornerPixel1.Blue+cornerPixel2.Blue+cornerPixel3.Blue+cornerPixel4.Blue)/4
 ```
 From here on out, I've assumed that the 4 pixels average is ****the color components of the background****.
 
 Now, knowing the red, green, and blue value of the background, I can compare the current pixel in the loop to the background color to see if they match. If they don't match, that's how we know its a coral reef pixel. 
 
 ```
- if ( _condition_ )
+ if ( *condition* )
  
  here, the condition will be: 
  
