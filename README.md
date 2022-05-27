@@ -97,7 +97,7 @@ We ran into some issues of the network not being too accurate at first and not d
 
 We used _**TensorFlow**_ and the ImageDataGenerator in python3 to do the analysis. The end goal of this was for the YOLOV-4 software to interpret the differnet coral in the pictures as shown in picture 2. Then I would take multiple different types of images like picture 2 for multiple coral, strengthen the border detection by using my above algorithm, and then outputting the values to the biochem people. 
 
-## Demonstration
+## Deliverable
 
 ## Issues 
 
