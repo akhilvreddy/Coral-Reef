@@ -100,6 +100,7 @@ We used _**TensorFlow**_ and the ImageDataGenerator in python3 to do the analysi
 ## Deliverable
 
 ## Issues 
+Some of the issues I ran into while doing this were importing the . 
 
 ## Remarks 
 I hope that this project is able to understand coral reefs more. By understanding the health and colors of the reef in a better fashion, it would benefit our environment and acquatic life. 
