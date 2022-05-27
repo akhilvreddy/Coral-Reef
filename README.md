@@ -89,18 +89,32 @@ This can be done like the following:
 ```
 condition: Math.abs(currentPixel.red-backgroundRedValue) <= 10 ; Math.abs(currentPixel.blue-backgroundBlueValue) <= 10 ; Math.abs(currentPixel.blue-backgroundBlueValue) <= 10
 ```
-From testing different RGB values, I saw that even if two of these conditions are true, the detection works well. Putting this into the if condition makes it work well. 
+From testing different RGB values, I saw that even if two of these conditions are true, the detection works well. Putting this into the if condition makes it work well. Here is what I got as a comparison: 
+
+<p align="center">
+  <img 
+    width="344"
+    height="394"
+    src="https://github.com/akhilvreddy/CoralReefAnalysis/blob/main/detectionpic.png"
+  >
+  <img 
+    width="344"
+    height="394"
+    src="https://github.com/akhilvreddy/CoralReefAnalysis/blob/main/45pic9.png"
+  >
+</p>
+
+> [Picture 4 & 5] Picture 4 is the average rgb value I got from my algorithm and picture 5 is the real rgb value of the image using ImageJ. 
+
+The harder it is to see the difference between these two images means the better this algorithm is working :)
+
+Now, using the average RGB values that I got, I packed them into a single file and sent that out. Others can analyze the coral from there. 
 
 ## Training the algorithm (.tflife file)
 This part didn't require much coding, but rather some learning on how neural networks work. What we did was gather. 
 We ran into some issues of the network not being too accurate at first and not detecting some of them, so we went back and trained the network further by importing and describing more images.
 
 We used _**TensorFlow**_ and the ImageDataGenerator in python3 to do the analysis. The end goal of this was for the YOLOV-4 software to interpret the differnet coral in the pictures as shown in picture 2. Then I would take multiple different types of images like picture 2 for multiple coral, strengthen the border detection by using my above algorithm, and then outputting the values to the biochem people. 
-
-## Deliverable
-
-## Issues 
-Some of the issues I ran into while doing this were importing the . 
 
 ## Remarks 
 I hope that this project is able to understand coral reefs more. By understanding the health and colors of the reef in a better fashion, it would benefit our environment and acquatic life. 
