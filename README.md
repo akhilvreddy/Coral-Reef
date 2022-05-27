@@ -104,7 +104,7 @@ From testing different RGB values, I saw that even if two of these conditions ar
   >
 </p>
 
-> [Picture 4 & 5] Picture 4 is the average rgb value I got from my algorithm and picture 5 is the real rgb value of the image using ImageJ. 
+> [Picture 4 & 5] Picture 4 is the average rgb value I got from my algorithm and picture 5 is the real rgb value of the image using ImageJ.
 
 The harder it is to see the difference between these two images means the better this algorithm is working :)
 
