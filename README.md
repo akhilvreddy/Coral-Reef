@@ -1,4 +1,4 @@
-# CoralReefAnalysis
+# Coral Reef Analysis
 Research project dealing with Coral Reefs and image detection.
 
 ## Abstract
